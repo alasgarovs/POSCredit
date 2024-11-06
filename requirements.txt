@@ -1,0 +1,4 @@
+pandas 
+openpyxl
+PyQt5
+SQLAlchemy

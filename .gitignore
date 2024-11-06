@@ -1,0 +1,7 @@
+*.db
+*.sqlite3
+.idea/
+__pycache__/
+info.py
+secret_key.py
+metadata.txt
