@@ -1,18 +1,29 @@
-# POSCredit
+# POSCredit <img src="https://github.com/user-attachments/assets/e1d7a617-8be0-4fa6-94f4-2a515ba273ec" alt="favicon" width="30"/>
 
-POSCredit is a user-friendly Point of Sale (POS) application designed for small to medium-sized businesses that need an efficient way to manage sales transactions, customer information, and credit management. Built using Python and PyQt5, POSCredit offers a modern graphical user interface that simplifies the sales process and enhances the overall customer experience.
+POSCredit is a user-friendly Point of Sale (POS) desktop application designed for small to medium-sized businesses that need an efficient way to manage sales transactions, customer information, and credit management. Built using Python and PyQt5, POSCredit offers a modern graphical user interface that simplifies the sales process and enhances the overall customer experience.
 
 ## Features
 
-- **Intuitive User Interface**: The application features a clean and straightforward interface, making it easy for users to navigate and perform tasks without extensive training.
-- **Customer Management**: Users can easily add, edit, and manage customer profiles, allowing for personalized service and better customer relationship management.
-- **Product Management**: The program allows users to add and manage products, including details such as product name, price, and stock levels, ensuring that inventory is always up to date.
-- **Sales Processing**: POSCredit enables users to process sales transactions quickly, including handling cash and credit payments. The system automatically calculates the remaining balance for customers who make partial payments.
-- **Credit Management**: The application tracks customer debts, allowing businesses to manage credit sales effectively. Users can view outstanding balances and payment history for each customer.
-- **Document Generation**: POSCredit can generate sales receipts and other documents, providing customers with proof of purchase and helping businesses maintain accurate records.
+- **User-Friendly Interface**  
+  A clean and intuitive design for easy navigation without extensive training.
+
+- **Customer Management**  
+  Effortlessly create and manage customer profiles for personalized service.
+
+- **Product Management**  
+  Add and update product details, ensuring inventory is always current.
+
+- **Sales Processing**  
+  Quickly process cash and credit transactions, with automatic balance calculations for partial payments.
+
+- **Credit Management**  
+  Track customer debts, view outstanding balances, and access payment history.
+
+- **Document Generation**  
+  Generate sales receipts and other documents for accurate record-keeping.
 
 ## Demo
-![screenshot](https://github.com/user-attachments/assets/1428a2b7-d462-4fae-9dd7-4ec3e10271e6)
+ <img src="https://github.com/user-attachments/assets/1428a2b7-d462-4fae-9dd7-4ec3e10271e6" alt="favicon" width="700"/>
 
 
 ## Requirements
