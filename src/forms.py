@@ -5,8 +5,7 @@ from secret_key import SecretKey
 
 
 class ProductFormValidator:
-    def __init__(self, product_name, product_quantity, product_buy_price, product_sale_price, product_barcode,
-                 product_id):
+    def __init__(self, product_name, product_quantity, product_buy_price, product_sale_price, product_barcode,product_id):
         self.product_name = product_name
         self.product_quantity = product_quantity
         self.product_buy_price = product_buy_price
@@ -23,29 +22,33 @@ class ProductFormValidator:
 
         # Validate product quantity
         try:
-            float(self.product_quantity)
+            if float(self.product_quantity) <= 0:
+                    "Məhsulun miqdarı düzgün deyil."
         except ValueError:
-            return "Məhsulun miqdarı düzgün olmalıdır."
+            return "Məhsulun miqdarı düzgün deyil."
 
         # Validate product buy price
         try:
             buy_price = float(self.product_buy_price)
-            if buy_price < 0:
-                return "Məhsulun alış qiyməti mənfi olmayan ədəd olmalıdır."
+            if buy_price <= 0:
+                return "Məhsulun alış qiyməti düzgün deyil."
         except ValueError:
-            return "Məhsulun alış qiyməti düzgün olmalıdır."
+            return "Məhsulun alış qiyməti düzgün deyil."
 
         # Validate product sale price
         try:
             sale_price = float(self.product_sale_price)
-            if sale_price < 0:
-                return "Məhsulun satış qiyməti mənfi olmayan ədəd olmalıdır."
+            if sale_price <= 0:
+                return "Məhsulun satış qiyməti düzgün deyil."
         except ValueError:
-            return "Məhsulun satış qiyməti düzgün olmalıdır."
+            return "Məhsulun satış qiyməti düzgün deyil."
 
         # Validate product barcode
-        if not self.product_barcode or len(self.product_barcode) > 15:
-            return "Məhsulun barkodu boş ola bilməz və 15 simvoldan çox olmamalıdır."
+        if self.product_barcode.isdigit() == False:
+            return 'Məhsul barkodu düzgün deyil!'
+
+        if not self.product_barcode or len(self.product_barcode) > 13:
+            return "Məhsulun barkodu boş ola bilməz və 13 simvoldan çox olmamalıdır."
 
         # Check if barcode is unique
         if not self.is_barcode_unique():
@@ -54,9 +57,12 @@ class ProductFormValidator:
         return True
 
     def is_barcode_unique(self):
+        if self.product_barcode == 'pass':
+            return True
+        
         session = Session()
         try:
-            existing_product = session.query(Products).filter(Products.product_barcode == self.product_barcode).first()
+            existing_product = session.query(Products).filter(Products.barcode == self.product_barcode).first()
             if existing_product:
                 if self.product_id:
                     if existing_product.id == int(self.product_id):
@@ -70,9 +76,9 @@ class ProductFormValidator:
 
 
 class CustomerFormValidator:
-    def __init__(self, name, phone_1, address):
+    def __init__(self, name, phone, address):
         self.name = name
-        self.phone_1 = phone_1
+        self.phone = phone
         self.address = address
 
     def validate(self):
@@ -83,8 +89,8 @@ class CustomerFormValidator:
             return "Ad 100 simvoldan çox ola bilməz."
 
         # Validate primary phone number
-        if not self.phone_1:
-            return "Birinci telefon nömrəsi boş ola bilməz."
+        if not self.phone:
+            return "Telefon nömrəsi boş ola bilməz."
 
         # Validate address (optional)
         if not self.address:
@@ -126,8 +132,12 @@ class PaymentFormValidator:
         self.payment_paid = paid
 
     def validate(self):
-        if not self.payment_paid:
-            return "Ödəniş məbləği düzgün deyil"
+        try:
+            debt = float(self.payment_paid)
+            if debt <= 0:
+                return "Ödəniş məbləği düzgün deyil."
+        except ValueError:
+            return "Ödəniş məbləği düzgün deyil."
 
         try:
             debt = float(self.payment_debt)

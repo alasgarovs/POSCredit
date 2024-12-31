@@ -1,6 +1,6 @@
-from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime, Date, func
+from sqlalchemy import create_engine, Column, Integer, String, DECIMAL, Float, Enum, DateTime, Date, ForeignKey, func, case
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, relationship
 import pytz 
 from datetime import datetime
 
@@ -11,62 +11,115 @@ class Products(Base):
     __tablename__ = 'products'
     
     id = Column(Integer, primary_key=True)
-    product_name = Column(String(100))
-    product_quantity = Column(Float)
-    product_buy_price = Column(Float)
-    product_sale_price = Column(Float)
-    product_barcode = Column(String(15), unique=True)
-    date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    name = Column(String(100), nullable=False)
+    quantity = Column(Float, default= 0.0)
+    barcode = Column(String(15), unique=True, nullable=False)
+    category = Column(String(100), nullable=True)
+    unit = Column(String(10), nullable=False)
+    created_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    updated_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')), 
+                                onupdate=lambda: datetime.now(pytz.timezone('Asia/Baku')))
 
 
-class Customers(Base):
-    __tablename__ = 'customers'
+class ProductMovements(Base):
+    __tablename__ = 'product_movements'
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    product_id = Column(Integer, nullable=False)
+    stakeholder_id = Column(Integer, nullable=False)
+    document_id = Column(Integer, nullable=False)
+    movement_type = Column(Integer, nullable=False)
+    quantity = Column(Float, nullable=False)
+    purchase_price = Column(Float, nullable=False)
+    sale_price = Column(Float, nullable=False)
+    created_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    updated_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')), 
+                                onupdate=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+
+
+class Category(Base):
+    __tablename__ = 'categories'
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    category_name = Column(String(255), nullable=False)
+    created_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    updated_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')), 
+                                onupdate=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+
+
+class Stakeholders(Base):
+    __tablename__ = 'stakeholders'
 
     id = Column(Integer, primary_key=True)
-    customer_name = Column(String(100))       
-    customer_phone_1 = Column(String(20))        
-    customer_phone_2 = Column(String(20))          
-    customer_address = Column(String(100))     
-    customer_level = Column(String(10))
-    customer_debt = Column(Float, default=0.0)
-    customer_payment_date = Column(Date, default=func.now())
+    name = Column(String(100), nullable=False)
+    phone = Column(String(20), nullable=False)
+    address = Column(String(100), nullable=False)
+    type = Column(String, default='supplier')
+    note = Column(String(100), nullable=True)
+    debt = Column(Float, default=0.0)
+    payment_date = Column(Date, default=func.now())
+    created_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    updated_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')), 
+                                onupdate=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+
+
+class StakeholderMovements(Base):
+    __tablename__ = 'stakeholder_movements'
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    stakeholder_id = Column(Integer, nullable=False)
+    document_id = Column(Integer, default=0)
+    movement_type = Column(Integer, nullable=False)
+    total= Column(Float, default = 0.0)
+    paid= Column(Float, default = 0.0)
+    debt= Column(Float, default = 0.0)
+    created_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    updated_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')), 
+                                onupdate=lambda: datetime.now(pytz.timezone('Asia/Baku')))
 
 
 class Documents(Base):
     __tablename__ = 'documents'
 
     id = Column(Integer, primary_key=True)
-    customer_id = Column(Integer)
-    customer = Column(String(100))
-    products = Column(String)
-    total = Column(Float)
-    paid = Column(Float)
-    debt = Column(Float)
-    date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
-
-
-class Payments(Base):
-    __tablename__ = 'payments'
-
-    id = Column(Integer, primary_key=True)
-    customer = Column(String(100))
-    total = Column(Float)
-    process = Column(Float)
-    debt = Column(Float)
-    status = Column(String)
-    date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    stakeholder_id = Column(Integer, nullable=False)
+    total = Column(Float, nullable=False)
+    warhouse = Column(String(100), default = 'Əsas')
+    note = Column(String(100), nullable=True)
+    document_type = Column(Integer, nullable=False)
+    created_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    updated_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')), 
+                                onupdate=lambda: datetime.now(pytz.timezone('Asia/Baku')))
 
 
 class CheckOut(Base):
     __tablename__ = 'checkout'
 
     id = Column(Integer, primary_key=True)
-    product_id = Column(Integer)
-    product_name = Column(String(100))
-    product_quantity = Column(Float)
-    product_price = Column(Float)
-    product_total_price = Column(Float)
-    product_barcode = Column(String)
+    product_id = Column(Integer, nullable=False)
+    product_movement_id = Column(Integer, default=0)
+    delete_status = Column(Integer, default=0)
+    name = Column(String(100), nullable=False)
+    barcode = Column(String, nullable=False)
+    quantity = Column(Float, nullable=False)
+    price = Column(Float, nullable=False)
+    sale_price = Column(Float, nullable=False)
+    unit = Column(String(100), nullable=False)
+
+
+class CheckIn(Base):
+    __tablename__ = 'checkin'
+
+    id = Column(Integer, primary_key=True)
+    product_id = Column(Integer, nullable=False)
+    product_movement_id = Column(Integer, default=0)
+    delete_status = Column(Integer, default=0)
+    name = Column(String(100), nullable=False)
+    barcode = Column(String, nullable=False)
+    quantity = Column(Float, nullable=False)
+    price = Column(Float, nullable=False)
+    sale_price = Column(Float, nullable=False)
+    unit = Column(String(100), nullable=False)
 
 
 class License(Base):
@@ -74,7 +127,10 @@ class License(Base):
 
     id = Column(Integer, primary_key=True)
     app_license = Column(String(100), default='no_license_key')
-    date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    created_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+    updated_date = Column(DateTime, default=lambda: datetime.now(pytz.timezone('Asia/Baku')), 
+                                onupdate=lambda: datetime.now(pytz.timezone('Asia/Baku')))
+
 
 
 # Create a SQLite database

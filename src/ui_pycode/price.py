@@ -42,7 +42,8 @@ class Ui_Price(object):
         font.setWeight(50)
         self.label_product.setFont(font)
         self.label_product.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.label_product.setStyleSheet("background-color:transparent;")
+        self.label_product.setStyleSheet("background-color:transparent;\n"
+"color:#006EFF;")
         self.label_product.setText("")
         self.label_product.setWordWrap(True)
         self.label_product.setObjectName("label_product")
@@ -71,30 +72,7 @@ class Ui_Price(object):
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
         self.verticalLayout_3.addWidget(self.line)
-        self.label_stock_quantity = QtWidgets.QLabel(self.widget_price)
-        font = QtGui.QFont()
-        font.setFamily("Sans Serif")
-        font.setPointSize(12)
-        font.setBold(False)
-        font.setWeight(50)
-        self.label_stock_quantity.setFont(font)
-        self.label_stock_quantity.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.label_stock_quantity.setStyleSheet("background-color:transparent;")
-        self.label_stock_quantity.setWordWrap(True)
-        self.label_stock_quantity.setObjectName("label_stock_quantity")
-        self.verticalLayout_3.addWidget(self.label_stock_quantity)
-        self.line_2 = QtWidgets.QFrame(self.widget_price)
-        font = QtGui.QFont()
-        font.setFamily("Sans Serif")
-        font.setBold(False)
-        font.setWeight(50)
-        self.line_2.setFont(font)
-        self.line_2.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
-        self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.line_2.setObjectName("line_2")
-        self.verticalLayout_3.addWidget(self.line_2)
-        spacerItem = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        spacerItem = QtWidgets.QSpacerItem(20, 25, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         self.verticalLayout_3.addItem(spacerItem)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setSpacing(14)
@@ -182,7 +160,7 @@ class Ui_Price(object):
         font.setWeight(50)
         self.button_add.setFont(font)
         self.button_add.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.button_add.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.button_add.setFocusPolicy(QtCore.Qt.NoFocus)
         self.button_add.setStyleSheet("QPushButton{\n"
 "    color:#006EFF;\n"
 "    height:30px;\n"
@@ -215,7 +193,7 @@ class Ui_Price(object):
         font.setWeight(50)
         self.button_cancel.setFont(font)
         self.button_cancel.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.button_cancel.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.button_cancel.setFocusPolicy(QtCore.Qt.NoFocus)
         self.button_cancel.setStyleSheet("QPushButton{\n"
 "    color:rgb(255, 53, 53);\n"
 "    height:30px;\n"
@@ -244,8 +222,6 @@ class Ui_Price(object):
 
     def retranslateUi(self, Price):
         _translate = QtCore.QCoreApplication.translate
-        self.label_stock_quantity.setToolTip(_translate("Price", "Məhsulun anbar qalığı"))
-        self.label_stock_quantity.setText(_translate("Price", "Anbar Qalığı:"))
         self.label_quantity.setText(_translate("Price", "Miqdar"))
         self.input_quantity.setToolTip(_translate("Price", "Məhsulun miqdarı"))
         self.input_quantity.setPlaceholderText(_translate("Price", "0"))
