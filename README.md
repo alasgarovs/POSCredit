@@ -1,14 +1,14 @@
 # POSCredit <img src="https://github.com/user-attachments/assets/e1d7a617-8be0-4fa6-94f4-2a515ba273ec" alt="favicon" width="30"/>
 
-POSCredit is a user-friendly Point of Sale (POS) desktop application designed for small to medium-sized businesses that need an efficient way to manage sales transactions, customer information, and credit management. Built using Python and PyQt5, POSCredit offers a modern graphical user interface that simplifies the sales process and enhances the overall customer experience.
+POSCredit is a user-friendly Point of Sale (POS) desktop application designed for small to medium-sized businesses that need an efficient way to manage sales transactions, stakeholder information, and credit management. Built using Python and PyQt5, POSCredit offers a modern graphical user interface that simplifies the sales process and enhances the overall stakeholder experience.
 
 ## Features
 
 - **User-Friendly Interface**  
   A clean and intuitive design for easy navigation without extensive training.
 
-- **Customer Management**  
-  Effortlessly create and manage customer profiles for personalized service.
+- **Stakeholder Management**  
+  Effortlessly create and manage stakeholder profiles for personalized service.
 
 - **Product Management**  
   Add and update product details, ensuring inventory is always current.
@@ -17,7 +17,7 @@ POSCredit is a user-friendly Point of Sale (POS) desktop application designed fo
   Quickly process cash and credit transactions, with automatic balance calculations for partial payments.
 
 - **Credit Management**  
-  Track customer debts, view outstanding balances, and access payment history.
+  Track stakeholder debts, view outstanding balances, and access payment history.
 
 - **Document Generation**  
   Generate sales receipts and other documents for accurate record-keeping.
