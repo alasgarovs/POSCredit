@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>886</width>
-    <height>559</height>
+    <width>1087</width>
+    <height>627</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -192,7 +192,7 @@ padding-right:8px</string>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="button_customer_1">
+          <widget class="QPushButton" name="button_product_1">
            <property name="font">
             <font>
              <family>Sans Serif</family>
@@ -213,8 +213,8 @@ padding-right:8px</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/icons/customer.png</normaloff>
-             <normalon>:/icons/customer_blue.png</normalon>:/icons/customer.png</iconset>
+             <normaloff>:/icons/products.png</normaloff>
+             <normalon>:/icons/products_blue.png</normalon>:/icons/products.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -234,7 +234,7 @@ padding-right:8px</string>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="button_product_1">
+          <widget class="QPushButton" name="button_stakeholder_1">
            <property name="font">
             <font>
              <family>Sans Serif</family>
@@ -255,8 +255,8 @@ padding-right:8px</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/icons/products.png</normaloff>
-             <normalon>:/icons/products_blue.png</normalon>:/icons/products.png</iconset>
+             <normaloff>:/icons/customer.png</normaloff>
+             <normalon>:/icons/customer_blue.png</normalon>:/icons/customer.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -272,6 +272,16 @@ padding-right:8px</string>
            </property>
            <property name="autoExclusive">
             <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_12">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -318,7 +328,7 @@ padding-right:8px</string>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="button_payment_1">
+          <widget class="QPushButton" name="button_movement_1">
            <property name="font">
             <font>
              <family>Sans Serif</family>
@@ -360,6 +370,48 @@ padding-right:8px</string>
           </widget>
          </item>
          <item>
+          <widget class="QPushButton" name="button_cash_register_1">
+           <property name="font">
+            <font>
+             <family>Sans Serif</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Alt+6</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/cash-machine.png</normaloff>
+             <normalon>:/icons/cash-machine_blue.png</normalon>:/icons/cash-machine.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Alt+6</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="Line" name="line_10">
            <property name="focusPolicy">
             <enum>Qt::NoFocus</enum>
@@ -384,7 +436,7 @@ padding-right:8px</string>
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Alt+6</string>
+            <string>Alt+7</string>
            </property>
            <property name="text">
             <string/>
@@ -401,7 +453,7 @@ padding-right:8px</string>
             </size>
            </property>
            <property name="shortcut">
-            <string>Alt+6</string>
+            <string>Alt+7</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -426,7 +478,7 @@ padding-right:8px</string>
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Alt+7</string>
+            <string>Alt+8</string>
            </property>
            <property name="text">
             <string/>
@@ -443,7 +495,7 @@ padding-right:8px</string>
             </size>
            </property>
            <property name="shortcut">
-            <string>Alt+7</string>
+            <string>Alt+8</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -467,8 +519,11 @@ padding-right:8px</string>
            <property name="focusPolicy">
             <enum>Qt::NoFocus</enum>
            </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
            <property name="toolTip">
-            <string>Alt+8</string>
+            <string>Alt+I</string>
            </property>
            <property name="text">
             <string/>
@@ -485,7 +540,7 @@ padding-right:8px</string>
             </size>
            </property>
            <property name="shortcut">
-            <string>Alt+8</string>
+            <string>Alt+I</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -631,7 +686,7 @@ QPushButton:checked{
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <property name="rightMargin">
-          <number>55</number>
+          <number>75</number>
          </property>
          <item>
           <spacer name="horizontalSpacer_4">
@@ -761,7 +816,7 @@ padding-right:8px</string>
             <bool>false</bool>
            </property>
            <property name="text">
-            <string>Kassa</string>
+            <string>Satış</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
@@ -786,7 +841,7 @@ padding-right:8px</string>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="button_customer_2">
+          <widget class="QPushButton" name="button_product_2">
            <property name="font">
             <font>
              <family>Sans Serif</family>
@@ -803,12 +858,12 @@ padding-right:8px</string>
             <string>Alt+2</string>
            </property>
            <property name="text">
-            <string>Müştərilər</string>
+            <string>Məhsullar</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/icons/customer.png</normaloff>
-             <normalon>:/icons/customer_blue.png</normalon>:/icons/customer.png</iconset>
+             <normaloff>:/icons/products.png</normaloff>
+             <normalon>:/icons/products_blue.png</normalon>:/icons/products.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -828,7 +883,7 @@ padding-right:8px</string>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="button_product_2">
+          <widget class="QPushButton" name="button_stakeholder_2">
            <property name="font">
             <font>
              <family>Sans Serif</family>
@@ -845,12 +900,12 @@ padding-right:8px</string>
             <string>Alt+3</string>
            </property>
            <property name="text">
-            <string>Məhsullar</string>
+            <string>Kontragentlər</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
-             <normaloff>:/icons/products.png</normaloff>
-             <normalon>:/icons/products_blue.png</normalon>:/icons/products.png</iconset>
+             <normaloff>:/icons/customer.png</normaloff>
+             <normalon>:/icons/customer_blue.png</normalon>:/icons/customer.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -866,6 +921,16 @@ padding-right:8px</string>
            </property>
            <property name="autoExclusive">
             <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_11">
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
           </widget>
          </item>
@@ -912,7 +977,7 @@ padding-right:8px</string>
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="button_payment_2">
+          <widget class="QPushButton" name="button_movement_2">
            <property name="font">
             <font>
              <family>Sans Serif</family>
@@ -929,7 +994,7 @@ padding-right:8px</string>
             <string>Alt+5</string>
            </property>
            <property name="text">
-            <string>Ödənişlər</string>
+            <string>Əməliyyatlar</string>
            </property>
            <property name="icon">
             <iconset resource="resources.qrc">
@@ -944,6 +1009,48 @@ padding-right:8px</string>
            </property>
            <property name="shortcut">
             <string>Alt+5</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="button_cash_register_2">
+           <property name="font">
+            <font>
+             <family>Sans Serif</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::NoFocus</enum>
+           </property>
+           <property name="toolTip">
+            <string>Alt+6</string>
+           </property>
+           <property name="text">
+            <string>Kassalar</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/icons/cash-machine.png</normaloff>
+             <normalon>:/icons/cash-machine_blue.png</normalon>:/icons/cash-machine.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="shortcut">
+            <string>Alt+6</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -978,7 +1085,7 @@ padding-right:8px</string>
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Alt+6</string>
+            <string>Alt+7</string>
            </property>
            <property name="text">
             <string>Parametrlər</string>
@@ -995,7 +1102,7 @@ padding-right:8px</string>
             </size>
            </property>
            <property name="shortcut">
-            <string>Alt+6</string>
+            <string>Alt+7</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -1020,7 +1127,7 @@ padding-right:8px</string>
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Alt+7</string>
+            <string>Alt+8</string>
            </property>
            <property name="text">
             <string>İstifadəçilər</string>
@@ -1037,7 +1144,7 @@ padding-right:8px</string>
             </size>
            </property>
            <property name="shortcut">
-            <string>Alt+7</string>
+            <string>Alt+8</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -1062,7 +1169,7 @@ padding-right:8px</string>
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="toolTip">
-            <string>Alt+8</string>
+            <string>Alt+I</string>
            </property>
            <property name="text">
             <string>Haqqında</string>
@@ -1079,7 +1186,7 @@ padding-right:8px</string>
             </size>
            </property>
            <property name="shortcut">
-            <string>Alt+8</string>
+            <string>Alt+I</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -1353,7 +1460,7 @@ padding-right:8px</string>
 </string>
          </property>
          <property name="currentIndex">
-          <number>5</number>
+          <number>3</number>
          </property>
          <widget class="QWidget" name="sale_page">
           <property name="font">
@@ -1373,30 +1480,147 @@ padding-right:8px</string>
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
-             <layout class="QVBoxLayout" name="verticalLayout_6">
-              <item>
-               <widget class="QLabel" name="label_sale">
-                <property name="font">
-                 <font>
-                  <family>Sans Serif</family>
-                  <pointsize>20</pointsize>
-                  <weight>75</weight>
-                  <bold>true</bold>
-                 </font>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="0" column="0">
+               <layout class="QGridLayout" name="gridLayout_4">
+                <property name="bottomMargin">
+                 <number>0</number>
                 </property>
-                <property name="focusPolicy">
-                 <enum>Qt::NoFocus</enum>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">background-color:transparent;
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="input_search_product">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>80</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>false</kerning>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>ArrowCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;</string>
+                  </property>
+                  <property name="maxLength">
+                   <number>100</number>
+                  </property>
+                  <property name="placeholderText">
+                   <string/>
+                  </property>
+                  <property name="clearButtonEnabled">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QPushButton" name="button_search_product">
+                  <property name="maximumSize">
+                   <size>
+                    <width>5</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>ArrowCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::StrongFocus</enum>
+                  </property>
+                  <property name="toolTip">
+                   <string/>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="shortcut">
+                   <string>Return</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <spacer name="horizontalSpacer">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_cash_register">
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>21</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color:transparent;
 color:#006EFF;</string>
-                </property>
-                <property name="text">
-                 <string>Kassa Satış</string>
-                </property>
-               </widget>
+                  </property>
+                  <property name="text">
+                   <string>Kassa</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </item>
-              <item>
+              <item row="1" column="0">
                <widget class="Line" name="line_5">
                 <property name="font">
                  <font>
@@ -1411,350 +1635,102 @@ color:#006EFF;</string>
                 </property>
                </widget>
               </item>
-              <item>
-               <spacer name="verticalSpacer_11">
-                <property name="font">
-                 <font>
-                  <family>FreeSans</family>
-                 </font>
-                </property>
-                <property name="focusPolicy">
-                 <enum>Qt::NoFocus</enum>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>13</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
+              <item row="2" column="0">
                <layout class="QHBoxLayout" name="horizontalLayout_4">
-                <property name="spacing">
-                 <number>6</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
                 <item>
-                 <widget class="QPushButton" name="button_choose_customer">
-                  <property name="minimumSize">
-                   <size>
-                    <width>40</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>50</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Sans Serif</family>
-                    <pointsize>11</pointsize>
-                    <weight>50</weight>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::NoFocus</enum>
-                  </property>
-                  <property name="toolTip">
-                   <string>Alıcı əlavə et - F3</string>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton{
-	color:#006EFF;
-	border:1px solid #006EFF;
-	border-radius:8px;
-}
-
-QPushButton:hover {
-    background-color:rgb(216, 216, 216); 
-}
-
-QPushButton:pressed {
-    background-color: white; 
-}</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset resource="resources.qrc">
-                    <normaloff>:/icons/customer_blue.png</normaloff>:/icons/customer_blue.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>18</width>
-                    <height>18</height>
-                   </size>
-                  </property>
-                  <property name="shortcut">
-                   <string>F3</string>
-                  </property>
-                  <property name="checkable">
-                   <bool>true</bool>
-                  </property>
-                  <property name="autoExclusive">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLineEdit" name="input_search_product">
-                  <property name="minimumSize">
-                   <size>
-                    <width>250</width>
-                    <height>0</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>400</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Sans Serif</family>
-                    <pointsize>10</pointsize>
-                    <weight>50</weight>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::StrongFocus</enum>
-                  </property>
-                  <property name="toolTip">
-                   <string>Məhsul adını daxil edin</string>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">border:1px solid #006EFF;
-background-color: rgb(255, 255, 255);
-border-radius:6px;
-height:25px
-</string>
-                  </property>
-                  <property name="maxLength">
-                   <number>100</number>
-                  </property>
-                  <property name="placeholderText">
-                   <string>məhsul axtar...</string>
-                  </property>
-                  <property name="clearButtonEnabled">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QPushButton" name="button_search_product">
-                  <property name="maximumSize">
-                   <size>
-                    <width>20</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Sans Serif</family>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::StrongFocus</enum>
-                  </property>
-                  <property name="toolTip">
-                   <string>Axtar - Enter</string>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">border:none</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset resource="resources.qrc">
-                    <normaloff>:/icons/search-icon.png</normaloff>:/icons/search-icon.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="shortcut">
-                   <string>Return</string>
-                  </property>
-                  <property name="checkable">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer">
-                  <property name="focusPolicy">
-                   <enum>Qt::NoFocus</enum>
-                  </property>
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_9">
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QPushButton" name="button_clear_customer">
-                  <property name="minimumSize">
-                   <size>
-                    <width>25</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>25</width>
-                    <height>30</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Sans Serif</family>
-                    <pointsize>11</pointsize>
-                    <weight>50</weight>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::NoFocus</enum>
-                  </property>
-                  <property name="toolTip">
-                   <string>Təmizlə - F4</string>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton{
+                 <layout class="QVBoxLayout" name="verticalLayout_22">
+                  <item>
+                   <widget class="QPushButton" name="button_choose_product">
+                    <property name="minimumSize">
+                     <size>
+                      <width>10</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>40</width>
+                      <height>30</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Sans Serif</family>
+                      <pointsize>11</pointsize>
+                      <weight>50</weight>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="cursor">
+                     <cursorShape>PointingHandCursor</cursorShape>
+                    </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="toolTip">
+                     <string>Məhsul əlavə et - F2</string>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QPushButton{
 	border:none;
-	margin-left:5px;
-}
-</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="icon">
-                   <iconset resource="resources.qrc">
-                    <normaloff>:/icons/cross.png</normaloff>:/icons/cross.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>18</width>
-                    <height>18</height>
-                   </size>
-                  </property>
-                  <property name="shortcut">
-                   <string>F4</string>
-                  </property>
-                  <property name="checkable">
-                   <bool>true</bool>
-                  </property>
-                  <property name="autoExclusive">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
+}</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <property name="icon">
+                     <iconset resource="resources.qrc">
+                      <normaloff>:/icons/products_blue.png</normaloff>:/icons/products_blue.png</iconset>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>18</width>
+                      <height>18</height>
+                     </size>
+                    </property>
+                    <property name="shortcut">
+                     <string>F2</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>true</bool>
+                    </property>
+                    <property name="autoExclusive">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_27">
+                    <property name="font">
+                     <font>
+                      <family>FreeSans</family>
+                     </font>
+                    </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>13</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
                 </item>
-                <item>
-                 <widget class="QLabel" name="label_customer_id">
-                  <property name="maximumSize">
-                   <size>
-                    <width>5</width>
-                    <height>12</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>FreeSans</family>
-                   </font>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::NoFocus</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">color:transparent;</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="label_about_customer">
-                  <property name="font">
-                   <font>
-                    <family>Sans Serif</family>
-                    <pointsize>11</pointsize>
-                    <weight>50</weight>
-                    <bold>false</bold>
-                    <underline>true</underline>
-                   </font>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::NoFocus</enum>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                  <property name="wordWrap">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_6">
                 <item>
                  <widget class="QTableWidget" name="table_sale">
                   <property name="font">
@@ -1772,14 +1748,26 @@ height:25px
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QHeaderView::section{
-	font-weight:bold;
-	background-color:black;
+	background-color:#006EFF;
 	color:white;
+	border:1px solid white;
 }
 
 QTableWidget{
-	alternate-background-color:#B0EDFB;
 	background-color:#f4f9fa;
+}
+
+QTableWidget::item {
+	background-color:rgb(230, 234, 255);
+	border:4px solid #f4f9fa;
+	border-right:0px;
+	border-left:0px;
+	border-bottom:0px;
+}
+
+QTableWidget::item:selected {
+    background-color: #006EFF;
+    color: white;
 }</string>
                   </property>
                   <property name="frameShape">
@@ -1804,13 +1792,19 @@ QTableWidget{
                    <enum>Qt::IgnoreAction</enum>
                   </property>
                   <property name="alternatingRowColors">
-                   <bool>false</bool>
+                   <bool>true</bool>
                   </property>
                   <property name="selectionMode">
-                   <enum>QAbstractItemView::NoSelection</enum>
+                   <enum>QAbstractItemView::SingleSelection</enum>
                   </property>
                   <property name="textElideMode">
                    <enum>Qt::ElideMiddle</enum>
+                  </property>
+                  <property name="showGrid">
+                   <bool>false</bool>
+                  </property>
+                  <property name="gridStyle">
+                   <enum>Qt::NoPen</enum>
                   </property>
                   <property name="rowCount">
                    <number>0</number>
@@ -1826,7 +1820,27 @@ QTableWidget{
                   </attribute>
                   <column>
                    <property name="text">
+                    <string/>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>№</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Sil</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
                     <string>Məhsul</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Ölçü vahidi</string>
                    </property>
                   </column>
                   <column>
@@ -1841,93 +1855,431 @@ QTableWidget{
                   </column>
                   <column>
                    <property name="text">
-                    <string>Ümumi</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string>Barkod</string>
-                   </property>
-                  </column>
-                  <column>
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>9</pointsize>
-                    </font>
+                    <string>Məbləğ</string>
                    </property>
                   </column>
                  </widget>
                 </item>
-               </layout>
-              </item>
-              <item>
-               <spacer name="verticalSpacer_6">
-                <property name="font">
-                 <font>
-                  <family>FreeSans</family>
-                 </font>
-                </property>
-                <property name="focusPolicy">
-                 <enum>Qt::NoFocus</enum>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>10</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_5">
                 <item>
-                 <widget class="QPushButton" name="button_sale">
-                  <property name="minimumSize">
-                   <size>
-                    <width>100</width>
-                    <height>40</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>105</width>
-                    <height>16777215</height>
-                   </size>
-                  </property>
+                 <spacer name="horizontalSpacer_25">
                   <property name="font">
                    <font>
-                    <family>Sans Serif</family>
-                    <pointsize>11</pointsize>
-                    <weight>75</weight>
-                    <bold>true</bold>
+                    <family>FreeSans</family>
                    </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
                   </property>
                   <property name="focusPolicy">
                    <enum>Qt::NoFocus</enum>
                   </property>
-                  <property name="toolTip">
-                   <string>Satış et - F5</string>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
                   </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Expanding</enum>
                   </property>
-                  <property name="autoFillBackground">
-                   <bool>false</bool>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">QPushButton{
+                 </spacer>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <property name="leftMargin">
+                   <number>20</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="right_top_panel" native="true">
+                    <property name="minimumSize">
+                     <size>
+                      <width>250</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">border:1px solid #006EFF;
+border-radius:10px;</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_20">
+                       <property name="spacing">
+                        <number>6</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="button_choose_customer">
+                         <property name="minimumSize">
+                          <size>
+                           <width>10</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>40</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Sans Serif</family>
+                           <pointsize>10</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="toolTip">
+                          <string>Alıcı əlavə et - F3</string>
+                         </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::LeftToRight</enum>
+                         </property>
+                         <property name="autoFillBackground">
+                          <bool>false</bool>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
+	border:none;
+}</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="resources.qrc">
+                           <normaloff>:/icons/customer_blue.png</normaloff>:/icons/customer_blue.png</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>18</width>
+                           <height>18</height>
+                          </size>
+                         </property>
+                         <property name="shortcut">
+                          <string>F3</string>
+                         </property>
+                         <property name="checkable">
+                          <bool>true</bool>
+                         </property>
+                         <property name="autoExclusive">
+                          <bool>true</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_21">
+                         <property name="spacing">
+                          <number>1</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QPushButton" name="button_clear_customer">
+                           <property name="minimumSize">
+                            <size>
+                             <width>20</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>20</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>Sans Serif</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                            </font>
+                           </property>
+                           <property name="cursor">
+                            <cursorShape>PointingHandCursor</cursorShape>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="toolTip">
+                            <string>Təmizlə - F4</string>
+                           </property>
+                           <property name="layoutDirection">
+                            <enum>Qt::LeftToRight</enum>
+                           </property>
+                           <property name="autoFillBackground">
+                            <bool>false</bool>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QPushButton{
+	border:none;
+	margin-left:5px;
+}
+</string>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset resource="resources.qrc">
+                             <normaloff>:/icons/cross.png</normaloff>:/icons/cross.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>14</width>
+                             <height>14</height>
+                            </size>
+                           </property>
+                           <property name="shortcut">
+                            <string>F4</string>
+                           </property>
+                           <property name="checkable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="autoExclusive">
+                            <bool>false</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_customer_id">
+                           <property name="maximumSize">
+                            <size>
+                             <width>5</width>
+                             <height>12</height>
+                            </size>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <family>FreeSans</family>
+                            </font>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">color:transparent;
+border:none;</string>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_customer">
+                           <property name="font">
+                            <font>
+                             <family>Sans Serif</family>
+                             <pointsize>10</pointsize>
+                             <weight>50</weight>
+                             <bold>false</bold>
+                             <underline>false</underline>
+                            </font>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">border:none;</string>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>false</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_26">
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeType">
+                          <enum>QSizePolicy::Expanding</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <widget class="Line" name="line_16">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>1</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>FreeSans</family>
+                        </font>
+                       </property>
+                       <property name="focusPolicy">
+                        <enum>Qt::NoFocus</enum>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_19">
+                       <property name="topMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_total_sale_price">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>FreeSans</family>
+                           <pointsize>25</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                           <kerning>false</kerning>
+                          </font>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">border:none;
+color:#006EFF;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_17">
+                         <property name="font">
+                          <font>
+                           <family>FreeSans</family>
+                          </font>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <widget class="Line" name="line_17">
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>1</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>FreeSans</family>
+                        </font>
+                       </property>
+                       <property name="focusPolicy">
+                        <enum>Qt::NoFocus</enum>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="orientation">
+                        <enum>Qt::Horizontal</enum>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_5">
+                       <property name="topMargin">
+                        <number>5</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="button_sale">
+                         <property name="minimumSize">
+                          <size>
+                           <width>100</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Sans Serif</family>
+                           <pointsize>11</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="cursor">
+                          <cursorShape>PointingHandCursor</cursorShape>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="toolTip">
+                          <string>Satış et - F5</string>
+                         </property>
+                         <property name="layoutDirection">
+                          <enum>Qt::LeftToRight</enum>
+                         </property>
+                         <property name="autoFillBackground">
+                          <bool>false</bool>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{
 	color:#006EFF;
 	padding:0 5px 0 5px;
 	border:1px solid #006EFF;
@@ -1941,54 +2293,85 @@ QPushButton:hover {
 QPushButton:pressed {
     background-color: white; 
 }</string>
-                  </property>
-                  <property name="text">
-                   <string>SATIŞ</string>
-                  </property>
-                  <property name="icon">
-                   <iconset resource="resources.qrc">
-                    <normaloff>:/icons/cassa_blue.png</normaloff>:/icons/cassa_blue.png</iconset>
-                  </property>
-                  <property name="iconSize">
-                   <size>
-                    <width>20</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="shortcut">
-                   <string>F5</string>
-                  </property>
-                  <property name="checkable">
-                   <bool>false</bool>
-                  </property>
-                  <property name="autoExclusive">
-                   <bool>false</bool>
-                  </property>
-                  <property name="flat">
-                   <bool>false</bool>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <spacer name="horizontalSpacer_8">
-                  <property name="font">
-                   <font>
-                    <family>FreeSans</family>
-                   </font>
-                  </property>
-                  <property name="focusPolicy">
-                   <enum>Qt::NoFocus</enum>
-                  </property>
-                  <property name="orientation">
-                   <enum>Qt::Horizontal</enum>
-                  </property>
-                  <property name="sizeHint" stdset="0">
-                   <size>
-                    <width>40</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                 </spacer>
+                         </property>
+                         <property name="text">
+                          <string>SATIŞ</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="resources.qrc">
+                           <normaloff>:/icons/cassa_blue.png</normaloff>:/icons/cassa_blue.png</iconset>
+                         </property>
+                         <property name="iconSize">
+                          <size>
+                           <width>20</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                         <property name="shortcut">
+                          <string>F5</string>
+                         </property>
+                         <property name="checkable">
+                          <bool>false</bool>
+                         </property>
+                         <property name="autoExclusive">
+                          <bool>false</bool>
+                         </property>
+                         <property name="flat">
+                          <bool>false</bool>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_18">
+                         <property name="font">
+                          <font>
+                           <family>FreeSans</family>
+                          </font>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_26">
+                    <property name="font">
+                     <font>
+                      <family>FreeSans</family>
+                     </font>
+                    </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                     <enum>QSizePolicy::Expanding</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>13</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
                 </item>
                </layout>
               </item>
@@ -1997,25 +2380,22 @@ QPushButton:pressed {
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="customers_page">
-          <layout class="QVBoxLayout" name="verticalLayout_9">
-           <property name="topMargin">
-            <number>9</number>
-           </property>
+         <widget class="QWidget" name="stakeholders_page">
+          <layout class="QVBoxLayout" name="verticalLayout_17">
            <item>
-            <widget class="QWidget" name="customers_widget" native="true">
+            <widget class="QWidget" name="stakeholders_widget" native="true">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
-             <layout class="QVBoxLayout" name="verticalLayout_5">
+             <layout class="QVBoxLayout" name="verticalLayout_16">
               <property name="topMargin">
                <number>9</number>
               </property>
               <item>
-               <widget class="QLabel" name="label_customers">
+               <widget class="QLabel" name="label_stakeholder">
                 <property name="font">
                  <font>
                   <family>Sans Serif</family>
@@ -2032,12 +2412,12 @@ QPushButton:pressed {
 color:#006EFF;</string>
                 </property>
                 <property name="text">
-                 <string>Müştərilər</string>
+                 <string>Kontragentlər</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="Line" name="line_2">
+               <widget class="Line" name="line_13">
                 <property name="focusPolicy">
                  <enum>Qt::NoFocus</enum>
                 </property>
@@ -2047,7 +2427,7 @@ color:#006EFF;</string>
                </widget>
               </item>
               <item>
-               <spacer name="verticalSpacer_8">
+               <spacer name="verticalSpacer_12">
                 <property name="focusPolicy">
                  <enum>Qt::NoFocus</enum>
                 </property>
@@ -2066,15 +2446,15 @@ color:#006EFF;</string>
                </spacer>
               </item>
               <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
                 <property name="leftMargin">
                  <number>2</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="button_new_customer">
+                 <widget class="QPushButton" name="button_new_stakeholder">
                   <property name="maximumSize">
                    <size>
-                    <width>125</width>
+                    <width>130</width>
                     <height>16777215</height>
                    </size>
                   </property>
@@ -2114,7 +2494,7 @@ QPushButton:pressed {
 }</string>
                   </property>
                   <property name="text">
-                   <string>Yeni Müştəri</string>
+                   <string> Yeni </string>
                   </property>
                   <property name="icon">
                    <iconset resource="resources.qrc">
@@ -2138,7 +2518,7 @@ QPushButton:pressed {
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="button_export_excel_customers">
+                 <widget class="QPushButton" name="button_export_excel_stakeholder">
                   <property name="maximumSize">
                    <size>
                     <width>155</width>
@@ -2206,7 +2586,7 @@ QPushButton:pressed {
                  </widget>
                 </item>
                 <item>
-                 <widget class="QComboBox" name="combobox_level_customer">
+                 <widget class="QComboBox" name="combobox_type_stakeholders">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -2216,15 +2596,15 @@ QPushButton:pressed {
                   <property name="maximumSize">
                    <size>
                     <width>16777215</width>
-                    <height>33</height>
+                    <height>16777215</height>
                    </size>
                   </property>
                   <property name="font">
                    <font>
                     <family>Sans Serif</family>
                     <pointsize>10</pointsize>
-                    <weight>75</weight>
-                    <bold>true</bold>
+                    <weight>50</weight>
+                    <bold>false</bold>
                    </font>
                   </property>
                   <property name="cursor">
@@ -2235,45 +2615,41 @@ QPushButton:pressed {
                   </property>
                   <property name="styleSheet">
                    <string notr="true">QComboBox {
-    background-color: black;
-    color: white;
-	border:none;
-	border-radius:8px;
-	height:30px;
-	padding:0 5px 0 5px;
+    border:1px solid #006EFF;
+	border-radius:2px;
+    background-color: rgb(255, 255, 255);
+	height:26px;
+	width:80px;
+	color:#006EFF;
 }
 
-QComboBox QAbstractItemView {
-    background-color: rgb(35, 35, 35); 
-    color: white;    
-}
 </string>
                   </property>
                   <property name="currentText">
-                   <string>Müştərilər</string>
+                   <string>Ümumi</string>
                   </property>
                   <property name="frame">
                    <bool>true</bool>
                   </property>
                   <item>
                    <property name="text">
-                    <string comment="dsffsd">Müştərilər</string>
+                    <string>Ümumi</string>
                    </property>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Loyal</string>
+                    <string>Tədarükçü</string>
                    </property>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Standart</string>
+                    <string>Müştəri</string>
                    </property>
                   </item>
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="input_filtr_customer">
+                 <widget class="QLineEdit" name="input_filtr_stakeholder">
                   <property name="minimumSize">
                    <size>
                     <width>200</width>
@@ -2298,13 +2674,13 @@ QComboBox QAbstractItemView {
                    <enum>Qt::StrongFocus</enum>
                   </property>
                   <property name="toolTip">
-                   <string>Müştəri filtrlə</string>
+                   <string>Filtrlə</string>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">border:1px solid #006EFF;
 background-color: rgb(255, 255, 255);
 border-radius:6px;
-height:25px
+height:25px;
 </string>
                   </property>
                   <property name="maxLength">
@@ -2319,7 +2695,7 @@ height:25px
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="button_filtr_customer">
+                 <widget class="QPushButton" name="button_filtr_stakeholder">
                   <property name="maximumSize">
                    <size>
                     <width>20</width>
@@ -2365,7 +2741,7 @@ height:25px
                  </widget>
                 </item>
                 <item>
-                 <spacer name="horizontalSpacer_7">
+                 <spacer name="horizontalSpacer_9">
                   <property name="focusPolicy">
                    <enum>Qt::NoFocus</enum>
                   </property>
@@ -2383,7 +2759,7 @@ height:25px
                </layout>
               </item>
               <item>
-               <spacer name="verticalSpacer_7">
+               <spacer name="verticalSpacer_24">
                 <property name="focusPolicy">
                  <enum>Qt::NoFocus</enum>
                 </property>
@@ -2402,7 +2778,7 @@ height:25px
                </spacer>
               </item>
               <item>
-               <widget class="QTableWidget" name="table_customers">
+               <widget class="QTableWidget" name="table_stakeholders">
                 <property name="cursor" stdset="0">
                  <cursorShape>PointingHandCursor</cursorShape>
                 </property>
@@ -2411,15 +2787,26 @@ height:25px
                 </property>
                 <property name="styleSheet">
                  <string notr="true">QHeaderView::section{
-	font-weight:bold;
-	background-color:black;
+	background-color:#006EFF;
 	color:white;
+	border:1px solid white;
 }
 
 QTableWidget{
-	alternate-background-color:#B0EDFB;
 	background-color:#f4f9fa;
-	text-align:center;
+}
+
+QTableWidget::item {
+	background-color:rgb(230, 234, 255);
+	border:4px solid #f4f9fa;
+	border-right:0px;
+	border-left:0px;
+	border-bottom:0px;
+}
+
+QTableWidget::item:selected {
+    background-color: #006EFF;
+    color: white;
 }</string>
                 </property>
                 <property name="frameShape">
@@ -2444,13 +2831,13 @@ QTableWidget{
                  <enum>QAbstractItemView::NoDragDrop</enum>
                 </property>
                 <property name="alternatingRowColors">
-                 <bool>false</bool>
+                 <bool>true</bool>
                 </property>
                 <property name="selectionMode">
-                 <enum>QAbstractItemView::NoSelection</enum>
+                 <enum>QAbstractItemView::SingleSelection</enum>
                 </property>
                 <property name="showGrid">
-                 <bool>true</bool>
+                 <bool>false</bool>
                 </property>
                 <property name="gridStyle">
                  <enum>Qt::SolidLine</enum>
@@ -2483,7 +2870,12 @@ QTableWidget{
                 </column>
                 <column>
                  <property name="text">
-                  <string>Müştəri</string>
+                  <string>Kontragent</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Ad / Soyad</string>
                  </property>
                 </column>
                 <column>
@@ -2498,12 +2890,7 @@ QTableWidget{
                 </column>
                 <column>
                  <property name="text">
-                  <string>Telefon 2</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Kateqoriya</string>
+                  <string>Qeyd</string>
                  </property>
                 </column>
                 <column>
@@ -2520,11 +2907,6 @@ QTableWidget{
                    <weight>50</weight>
                    <bold>false</bold>
                   </font>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string/>
                  </property>
                 </column>
                </widget>
@@ -2654,7 +3036,7 @@ QPushButton:pressed {
 }</string>
                   </property>
                   <property name="text">
-                   <string>Yeni Məhsul</string>
+                   <string> Yeni </string>
                   </property>
                   <property name="icon">
                    <iconset resource="resources.qrc">
@@ -2768,7 +3150,7 @@ QPushButton:pressed {
                    <enum>Qt::StrongFocus</enum>
                   </property>
                   <property name="toolTip">
-                   <string>Məhsul filtrlə</string>
+                   <string>Filtrlə</string>
                   </property>
                   <property name="styleSheet">
                    <string notr="true">border:1px solid #006EFF;
@@ -2896,14 +3278,26 @@ height:25px
                 </property>
                 <property name="styleSheet">
                  <string notr="true">QHeaderView::section{
-	font-weight:bold;
-	background-color:black;
+	background-color:#006EFF;
 	color:white;
+	border:1px solid white;
 }
 
 QTableWidget{
-	alternate-background-color:#B0EDFB;
 	background-color:#f4f9fa;
+}
+
+QTableWidget::item {
+	background-color:rgb(230, 234, 255);
+	border:4px solid #f4f9fa;
+	border-right:0px;
+	border-left:0px;
+	border-bottom:0px;
+}
+
+QTableWidget::item:selected {
+    background-color: #006EFF;
+    color: white;
 }</string>
                 </property>
                 <property name="frameShape">
@@ -2925,10 +3319,16 @@ QTableWidget{
                  <bool>false</bool>
                 </property>
                 <property name="alternatingRowColors">
-                 <bool>false</bool>
+                 <bool>true</bool>
                 </property>
                 <property name="selectionMode">
-                 <enum>QAbstractItemView::NoSelection</enum>
+                 <enum>QAbstractItemView::SingleSelection</enum>
+                </property>
+                <property name="showGrid">
+                 <bool>false</bool>
+                </property>
+                <property name="gridStyle">
+                 <enum>Qt::NoPen</enum>
                 </property>
                 <property name="rowCount">
                  <number>0</number>
@@ -2963,32 +3363,27 @@ QTableWidget{
                 </column>
                 <column>
                  <property name="text">
-                  <string>Miqdar</string>
+                  <string>Anbar sayı</string>
                  </property>
                 </column>
                 <column>
                  <property name="text">
-                  <string>Alış</string>
+                  <string>Vahid</string>
                  </property>
                 </column>
                 <column>
                  <property name="text">
-                  <string>Satış</string>
+                  <string>Alış qiyməti</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Satış qiyməti</string>
                  </property>
                 </column>
                 <column>
                  <property name="text">
                   <string>Barkod</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>9</pointsize>
-                  </font>
                  </property>
                 </column>
                </widget>
@@ -3005,7 +3400,7 @@ QTableWidget{
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
-             <layout class="QVBoxLayout" name="verticalLayout_19">
+             <layout class="QVBoxLayout" name="verticalLayout_18">
               <item>
                <widget class="QLabel" name="label_documents">
                 <property name="font">
@@ -3024,7 +3419,7 @@ QTableWidget{
 color:#006EFF;</string>
                 </property>
                 <property name="text">
-                 <string>Satış Sənədləri</string>
+                 <string>Sənədlər</string>
                 </property>
                </widget>
               </item>
@@ -3060,16 +3455,10 @@ color:#006EFF;</string>
               <item>
                <layout class="QHBoxLayout" name="horizontalLayout_14">
                 <item>
-                 <widget class="QLineEdit" name="input_filtr_documents">
-                  <property name="minimumSize">
-                   <size>
-                    <width>200</width>
-                    <height>0</height>
-                   </size>
-                  </property>
+                 <widget class="QPushButton" name="button_new_document">
                   <property name="maximumSize">
                    <size>
-                    <width>300</width>
+                    <width>125</width>
                     <height>16777215</height>
                    </size>
                   </property>
@@ -3081,27 +3470,359 @@ color:#006EFF;</string>
                     <bold>false</bold>
                    </font>
                   </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
                   <property name="focusPolicy">
-                   <enum>Qt::StrongFocus</enum>
+                   <enum>Qt::NoFocus</enum>
                   </property>
                   <property name="toolTip">
-                   <string>Sənəd filtrlə</string>
+                   <string>Ctrl+N</string>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border:1px solid #006EFF;
-background-color: rgb(255, 255, 255);
-border-radius:6px;
-height:25px
+                   <string notr="true">QPushButton{
+	background-color:#006EFF;
+	color:white;
+	border:none;
+	border-radius:8px;
+	height:30px;
+	padding:0 5px 0 5px;
+}
+
+QPushButton:hover {
+    background-color:rgb(2, 100, 221); 
+}
+
+QPushButton:pressed {
+    background-color: #006EFF; 
+}</string>
+                  </property>
+                  <property name="text">
+                   <string> Yeni </string>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/add_document.png</normaloff>:/icons/add_document.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="shortcut">
+                   <string>Ctrl+N</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="combobox_type_documents">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="toolTip">
+                   <string>Sənəd növləri</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox {
+    border:1px solid #006EFF;
+	border-radius:2px;
+    background-color: rgb(255, 255, 255);
+	height:26px;
+	width:60px;
+	color:#006EFF;
+}
+
 </string>
                   </property>
-                  <property name="maxLength">
-                   <number>100</number>
+                  <property name="currentText">
+                   <string>Ümumi</string>
                   </property>
-                  <property name="placeholderText">
-                   <string>filtrlə...</string>
-                  </property>
-                  <property name="clearButtonEnabled">
+                  <property name="frame">
                    <bool>true</bool>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string comment="dsffsd">Ümumi</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Alış</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>Satış</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_16">
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="button_choose_stakeholder">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="toolTip">
+                   <string>Filtrlə - Ctrl+F</string>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	border:none;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/customer_blue.png</normaloff>:/icons/customer_blue.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>18</width>
+                    <height>18</height>
+                   </size>
+                  </property>
+                  <property name="shortcut">
+                   <string>Ctrl+F</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="button_clear_stakeholder">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="toolTip">
+                   <string>Təmizlə - Delete</string>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	border:none;
+	margin-left:5px;
+}
+</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/cross.png</normaloff>:/icons/cross.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>14</width>
+                    <height>14</height>
+                   </size>
+                  </property>
+                  <property name="shortcut">
+                   <string>Del</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_document_stakeholder">
+                  <property name="minimumSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <underline>false</underline>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                  <property name="indent">
+                   <number>1</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_document_stakeholder_id">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <underline>false</underline>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:transparent;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                  <property name="indent">
+                   <number>1</number>
                   </property>
                  </widget>
                 </item>
@@ -3152,14 +3873,26 @@ height:25px
                 </property>
                 <property name="styleSheet">
                  <string notr="true">QHeaderView::section{
-	font-weight:bold;
-	background-color:black;
+	background-color:#006EFF;
 	color:white;
+	border:1px solid white;
 }
 
 QTableWidget{
-	alternate-background-color:#B0EDFB;
 	background-color:#f4f9fa;
+}
+
+QTableWidget::item {
+	background-color:rgb(230, 234, 255);
+	border:4px solid #f4f9fa;
+	border-right:0px;
+	border-left:0px;
+	border-bottom:0px;
+}
+
+QTableWidget::item:selected {
+    background-color: #006EFF;
+    color: white;
 }</string>
                 </property>
                 <property name="frameShape">
@@ -3184,7 +3917,16 @@ QTableWidget{
                  <bool>false</bool>
                 </property>
                 <property name="selectionMode">
-                 <enum>QAbstractItemView::NoSelection</enum>
+                 <enum>QAbstractItemView::SingleSelection</enum>
+                </property>
+                <property name="showGrid">
+                 <bool>false</bool>
+                </property>
+                <property name="gridStyle">
+                 <enum>Qt::NoPen</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>false</bool>
                 </property>
                 <property name="rowCount">
                  <number>0</number>
@@ -3205,7 +3947,17 @@ QTableWidget{
                 </column>
                 <column>
                  <property name="text">
-                  <string>Müştəri</string>
+                  <string>Sənəd</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Tarix</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Ad / Soyad</string>
                  </property>
                 </column>
                 <column>
@@ -3215,17 +3967,7 @@ QTableWidget{
                 </column>
                 <column>
                  <property name="text">
-                  <string>Verildi</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Borc</string>
-                 </property>
-                </column>
-                <column>
-                 <property name="text">
-                  <string>Tarix</string>
+                  <string>Qeyd</string>
                  </property>
                 </column>
                </widget>
@@ -3235,16 +3977,16 @@ QTableWidget{
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="payments_page">
+         <widget class="QWidget" name="movements_page">
           <layout class="QVBoxLayout" name="verticalLayout_8">
            <item>
-            <widget class="QWidget" name="payments_widget" native="true">
+            <widget class="QWidget" name="movements_widget" native="true">
              <property name="focusPolicy">
               <enum>Qt::NoFocus</enum>
              </property>
-             <layout class="QVBoxLayout" name="verticalLayout_21">
+             <layout class="QVBoxLayout" name="verticalLayout_5">
               <item>
-               <widget class="QLabel" name="label_payments">
+               <widget class="QLabel" name="label_movements">
                 <property name="font">
                  <font>
                   <family>Sans Serif</family>
@@ -3261,7 +4003,7 @@ QTableWidget{
 color:#006EFF;</string>
                 </property>
                 <property name="text">
-                 <string>Ödənişlər</string>
+                 <string>Əməliyyatlar</string>
                 </property>
                </widget>
               </item>
@@ -3295,19 +4037,85 @@ color:#006EFF;</string>
                </spacer>
               </item>
               <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <layout class="QHBoxLayout" name="horizontalLayout_16">
                 <item>
-                 <widget class="QLineEdit" name="input_filtr_payment">
+                 <widget class="QPushButton" name="button_movement_choose_stakeholder">
                   <property name="minimumSize">
                    <size>
-                    <width>200</width>
+                    <width>0</width>
                     <height>0</height>
                    </size>
                   </property>
                   <property name="maximumSize">
                    <size>
-                    <width>300</width>
-                    <height>16777215</height>
+                    <width>50</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="toolTip">
+                   <string>Filtrlə - Ctrl+F</string>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+	border:none;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/customer_blue.png</normaloff>:/icons/customer_blue.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>18</width>
+                    <height>18</height>
+                   </size>
+                  </property>
+                  <property name="shortcut">
+                   <string>Ctrl+F</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="button_movement_clear_stakeholder">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>20</width>
+                    <height>30</height>
                    </size>
                   </property>
                   <property name="font">
@@ -3318,32 +4126,140 @@ color:#006EFF;</string>
                     <bold>false</bold>
                    </font>
                   </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
                   <property name="focusPolicy">
-                   <enum>Qt::StrongFocus</enum>
+                   <enum>Qt::NoFocus</enum>
                   </property>
                   <property name="toolTip">
-                   <string>Ödəniş filtrlə</string>
+                   <string>Təmizlə - Delete</string>
+                  </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
+                  <property name="autoFillBackground">
+                   <bool>false</bool>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">border:1px solid #006EFF;
-background-color: rgb(255, 255, 255);
-border-radius:6px;
-height:25px
+                   <string notr="true">QPushButton{
+	border:none;
+	margin-left:5px;
+}
 </string>
                   </property>
-                  <property name="maxLength">
-                   <number>100</number>
+                  <property name="text">
+                   <string/>
                   </property>
-                  <property name="placeholderText">
-                   <string>filtrlə...</string>
+                  <property name="icon">
+                   <iconset resource="resources.qrc">
+                    <normaloff>:/icons/cross.png</normaloff>:/icons/cross.png</iconset>
                   </property>
-                  <property name="clearButtonEnabled">
+                  <property name="iconSize">
+                   <size>
+                    <width>14</width>
+                    <height>14</height>
+                   </size>
+                  </property>
+                  <property name="shortcut">
+                   <string>Del</string>
+                  </property>
+                  <property name="checkable">
                    <bool>true</bool>
+                  </property>
+                  <property name="autoExclusive">
+                   <bool>false</bool>
                   </property>
                  </widget>
                 </item>
                 <item>
-                 <spacer name="horizontalSpacer_15">
+                 <widget class="QLabel" name="label_movement_stakeholder">
+                  <property name="minimumSize">
+                   <size>
+                    <width>200</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>11</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <underline>false</underline>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                  <property name="indent">
+                   <number>1</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_movement_stakeholder_id">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Sans Serif</family>
+                    <pointsize>10</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <underline>false</underline>
+                   </font>
+                  </property>
+                  <property name="focusPolicy">
+                   <enum>Qt::NoFocus</enum>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color:transparent;</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                  <property name="wordWrap">
+                   <bool>false</bool>
+                  </property>
+                  <property name="indent">
+                   <number>1</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_20">
                   <property name="focusPolicy">
                    <enum>Qt::NoFocus</enum>
                   </property>
@@ -3361,26 +4277,7 @@ height:25px
                </layout>
               </item>
               <item>
-               <spacer name="verticalSpacer_19">
-                <property name="focusPolicy">
-                 <enum>Qt::NoFocus</enum>
-                </property>
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>17</width>
-                  <height>17</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QTableWidget" name="table_payments">
+               <widget class="QTableWidget" name="table_movements">
                 <property name="cursor" stdset="0">
                  <cursorShape>PointingHandCursor</cursorShape>
                 </property>
@@ -3389,14 +4286,26 @@ height:25px
                 </property>
                 <property name="styleSheet">
                  <string notr="true">QHeaderView::section{
-	font-weight:bold;
-	background-color:black;
+	background-color:#006EFF;
 	color:white;
+	border:1px solid white;
 }
 
 QTableWidget{
-	alternate-background-color:#B0EDFB;
 	background-color:#f4f9fa;
+}
+
+QTableWidget::item {
+	background-color:rgb(230, 234, 255);
+	border:4px solid #f4f9fa;
+	border-right:0px;
+	border-left:0px;
+	border-bottom:0px;
+}
+
+QTableWidget::item:selected {
+    background-color: #006EFF;
+    color: white;
 }</string>
                 </property>
                 <property name="frameShape">
@@ -3418,10 +4327,16 @@ QTableWidget{
                  <bool>false</bool>
                 </property>
                 <property name="alternatingRowColors">
-                 <bool>false</bool>
+                 <bool>true</bool>
                 </property>
                 <property name="selectionMode">
-                 <enum>QAbstractItemView::NoSelection</enum>
+                 <enum>QAbstractItemView::SingleSelection</enum>
+                </property>
+                <property name="showGrid">
+                 <bool>false</bool>
+                </property>
+                <property name="gridStyle">
+                 <enum>Qt::NoPen</enum>
                 </property>
                 <property name="rowCount">
                  <number>0</number>
@@ -3437,7 +4352,22 @@ QTableWidget{
                 </attribute>
                 <column>
                  <property name="text">
-                  <string>Müştəri</string>
+                  <string/>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Kontragent</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Ad / Soyad</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Proses</string>
                  </property>
                 </column>
                 <column>
@@ -3447,7 +4377,7 @@ QTableWidget{
                 </column>
                 <column>
                  <property name="text">
-                  <string>Proses</string>
+                  <string>Ödəniş</string>
                  </property>
                 </column>
                 <column>
@@ -3458,6 +4388,11 @@ QTableWidget{
                 <column>
                  <property name="text">
                   <string>Tarix</string>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Sil</string>
                  </property>
                 </column>
                </widget>
@@ -3955,6 +4890,7 @@ QPushButton:pressed {
  </widget>
  <resources>
   <include location="resources.qrc"/>
+  <include location="../../../../Downloads/POSCredit-main/ui_files/resources.qrc"/>
  </resources>
  <connections>
   <connection>
@@ -3964,7 +4900,7 @@ QPushButton:pressed {
    <slot>setHidden(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>237</x>
+     <x>257</x>
      <y>56</y>
     </hint>
     <hint type="destinationlabel">
@@ -3980,7 +4916,7 @@ QPushButton:pressed {
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>237</x>
+     <x>257</x>
      <y>56</y>
     </hint>
     <hint type="destinationlabel">
@@ -3997,11 +4933,11 @@ QPushButton:pressed {
    <hints>
     <hint type="sourcelabel">
      <x>41</x>
-     <y>205</y>
+     <y>171</y>
     </hint>
     <hint type="destinationlabel">
      <x>202</x>
-     <y>206</y>
+     <y>173</y>
     </hint>
    </hints>
   </connection>
@@ -4012,12 +4948,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>42</x>
-     <y>250</y>
+     <x>52</x>
+     <y>284</y>
     </hint>
     <hint type="destinationlabel">
-     <x>193</x>
-     <y>251</y>
+     <x>249</x>
+     <y>286</y>
     </hint>
    </hints>
   </connection>
@@ -4028,92 +4964,44 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>202</x>
-     <y>251</y>
+     <x>249</x>
+     <y>286</y>
     </hint>
     <hint type="destinationlabel">
-     <x>36</x>
-     <y>250</y>
+     <x>46</x>
+     <y>284</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>button_customer_2</sender>
+   <sender>button_movement_2</sender>
    <signal>toggled(bool)</signal>
-   <receiver>button_customer_1</receiver>
+   <receiver>button_movement_1</receiver>
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>182</x>
-     <y>161</y>
+     <x>249</x>
+     <y>331</y>
     </hint>
     <hint type="destinationlabel">
-     <x>47</x>
-     <y>160</y>
+     <x>52</x>
+     <y>329</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>button_customer_1</sender>
+   <sender>button_movement_1</sender>
    <signal>toggled(bool)</signal>
-   <receiver>button_customer_2</receiver>
+   <receiver>button_movement_2</receiver>
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>52</x>
-     <y>176</y>
+     <y>329</y>
     </hint>
     <hint type="destinationlabel">
-     <x>204</x>
-     <y>177</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>button_payment_2</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>button_payment_1</receiver>
-   <slot>setChecked(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>204</x>
-     <y>312</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>52</x>
-     <y>311</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>button_payment_1</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>button_payment_2</receiver>
-   <slot>setChecked(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>52</x>
-     <y>311</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>204</x>
-     <y>312</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>button_choose_customer</sender>
-   <signal>clicked(bool)</signal>
-   <receiver>button_customer_2</receiver>
-   <slot>setChecked(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>321</x>
-     <y>47</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>204</x>
-     <y>177</y>
+     <x>249</x>
+     <y>331</y>
     </hint>
    </hints>
   </connection>
@@ -4124,12 +5012,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>201</x>
-     <y>549</y>
+     <x>250</x>
+     <y>617</y>
     </hint>
     <hint type="destinationlabel">
-     <x>36</x>
-     <y>549</y>
+     <x>45</x>
+     <y>617</y>
     </hint>
    </hints>
   </connection>
@@ -4141,11 +5029,11 @@ QPushButton:pressed {
    <hints>
     <hint type="sourcelabel">
      <x>53</x>
-     <y>549</y>
+     <y>617</y>
     </hint>
     <hint type="destinationlabel">
-     <x>205</x>
-     <y>549</y>
+     <x>250</x>
+     <y>617</y>
     </hint>
    </hints>
   </connection>
@@ -4156,12 +5044,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>107</x>
-     <y>351</y>
+     <x>186</x>
+     <y>439</y>
     </hint>
     <hint type="destinationlabel">
-     <x>33</x>
-     <y>374</y>
+     <x>43</x>
+     <y>437</y>
     </hint>
    </hints>
   </connection>
@@ -4172,12 +5060,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>45</x>
-     <y>374</y>
+     <x>52</x>
+     <y>437</y>
     </hint>
     <hint type="destinationlabel">
-     <x>179</x>
-     <y>376</y>
+     <x>249</x>
+     <y>439</y>
     </hint>
    </hints>
   </connection>
@@ -4188,12 +5076,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>181</x>
-     <y>421</y>
+     <x>249</x>
+     <y>484</y>
     </hint>
     <hint type="destinationlabel">
-     <x>33</x>
-     <y>419</y>
+     <x>43</x>
+     <y>482</y>
     </hint>
    </hints>
   </connection>
@@ -4204,12 +5092,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>37</x>
-     <y>395</y>
+     <x>47</x>
+     <y>482</y>
     </hint>
     <hint type="destinationlabel">
-     <x>104</x>
-     <y>396</y>
+     <x>183</x>
+     <y>484</y>
     </hint>
    </hints>
   </connection>
@@ -4220,12 +5108,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>95</x>
-     <y>459</y>
+     <x>174</x>
+     <y>529</y>
     </hint>
     <hint type="destinationlabel">
-     <x>31</x>
-     <y>447</y>
+     <x>41</x>
+     <y>527</y>
     </hint>
    </hints>
   </connection>
@@ -4236,12 +5124,12 @@ QPushButton:pressed {
    <slot>setChecked(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>35</x>
-     <y>459</y>
+     <x>45</x>
+     <y>527</y>
     </hint>
     <hint type="destinationlabel">
-     <x>100</x>
-     <y>459</y>
+     <x>179</x>
+     <y>529</y>
     </hint>
    </hints>
   </connection>
@@ -4253,11 +5141,11 @@ QPushButton:pressed {
    <hints>
     <hint type="sourcelabel">
      <x>179</x>
-     <y>206</y>
+     <y>173</y>
     </hint>
     <hint type="destinationlabel">
      <x>48</x>
-     <y>205</y>
+     <y>171</y>
     </hint>
    </hints>
   </connection>
@@ -4269,7 +5157,7 @@ QPushButton:pressed {
    <hints>
     <hint type="sourcelabel">
      <x>52</x>
-     <y>131</y>
+     <y>127</y>
     </hint>
     <hint type="destinationlabel">
      <x>200</x>
@@ -4290,6 +5178,70 @@ QPushButton:pressed {
     <hint type="destinationlabel">
      <x>22</x>
      <y>115</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_stakeholder_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>button_stakeholder_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>39</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_stakeholder_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>button_stakeholder_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>40</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_cash_register_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>button_cash_register_1</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>376</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>374</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_cash_register_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>button_cash_register_2</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>374</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>376</y>
     </hint>
    </hints>
   </connection>

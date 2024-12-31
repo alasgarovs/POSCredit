@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Customer</class>
- <widget class="QWidget" name="Customer">
+ <class>Stakeholder</class>
+ <widget class="QWidget" name="Stakeholder">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>474</width>
-    <height>419</height>
+    <width>355</width>
+    <height>514</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>355</width>
+    <height>0</height>
+   </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>520</width>
-    <height>475</height>
+    <width>400</width>
+    <height>520</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -28,7 +34,7 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_7">
    <item>
-    <widget class="QWidget" name="widget_customer" native="true">
+    <widget class="QWidget" name="widget_stakeholder" native="true">
      <property name="font">
       <font>
        <family>Sans Serif</family>
@@ -38,7 +44,7 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_6">
       <item>
-       <widget class="QLabel" name="label_add_customer">
+       <widget class="QLabel" name="label_add_stakeholder">
         <property name="font">
          <font>
           <family>Sans Serif</family>
@@ -51,12 +57,12 @@
          <string notr="true">background-color:transparent;</string>
         </property>
         <property name="text">
-         <string>Müştəri əlavə et</string>
+         <string/>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_customer_id">
+       <widget class="QLabel" name="label_stakeholder_id">
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -138,7 +144,7 @@
              </font>
             </property>
             <property name="toolTip">
-             <string>Müştəri adı və soyadı</string>
+             <string>Kontragent adı və soyadı - Bu sahə vacibdir</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border:1px solid #006EFF;
@@ -148,7 +154,7 @@ height:25px
 </string>
             </property>
             <property name="maxLength">
-             <number>100</number>
+             <number>60</number>
             </property>
             <property name="placeholderText">
              <string/>
@@ -189,99 +195,126 @@ height:25px
        </spacer>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <layout class="QVBoxLayout" name="verticalLayout_8">
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
-          <item>
-           <widget class="QLabel" name="label_phone_1">
-            <property name="font">
-             <font>
-              <family>Sans Serif</family>
-              <pointsize>12</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color:transparent;</string>
-            </property>
-            <property name="text">
-             <string>Telefon 1*</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="input_phone_1">
-            <property name="minimumSize">
-             <size>
-              <width>200</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>300</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Sans Serif</family>
-              <pointsize>10</pointsize>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="toolTip">
-             <string>Telefon nömrəsi</string>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border:1px solid #006EFF;
-background-color: rgb(255, 255, 255);
-border-radius:6px;
-height:25px
-</string>
-            </property>
-            <property name="maxLength">
-             <number>12</number>
-            </property>
-            <property name="placeholderText">
-             <string/>
-            </property>
-            <property name="clearButtonEnabled">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <spacer name="horizontalSpacer_4">
+         <widget class="QLabel" name="label_type_stakeholder">
           <property name="font">
            <font>
             <family>Sans Serif</family>
+            <pointsize>12</pointsize>
             <weight>50</weight>
             <bold>false</bold>
            </font>
           </property>
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
           </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Fixed</enum>
+          <property name="styleSheet">
+           <string notr="true">background-color:transparent;</string>
           </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>20</height>
-           </size>
+          <property name="text">
+           <string>Kontragent növü</string>
           </property>
-         </spacer>
+         </widget>
         </item>
         <item>
-         <layout class="QVBoxLayout" name="verticalLayout_4">
+         <widget class="QComboBox" name="combobox_type_stakeholder">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sans Serif</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="toolTip">
+           <string>Kontragent növü- Bu sahə vacibdir</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+    border:1px solid #006EFF;
+	border-radius:2px;
+    background-color: rgb(255, 255, 255);
+	height:26px;
+	width:80px;
+	color:black;
+}
+
+</string>
+          </property>
+          <property name="currentText">
+           <string>Tədarükçü</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="frame">
+           <bool>true</bool>
+          </property>
           <item>
-           <widget class="QLabel" name="label_phone_2">
+           <property name="text">
+            <string>Tədarükçü</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string comment="dsffsd">Müştəri</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_10">
+        <property name="font">
+         <font>
+          <family>Sans Serif</family>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_phone">
             <property name="font">
              <font>
               <family>Sans Serif</family>
@@ -290,16 +323,19 @@ height:25px
               <bold>false</bold>
              </font>
             </property>
+            <property name="toolTip">
+             <string/>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color:transparent;</string>
             </property>
             <property name="text">
-             <string>Telefon 2</string>
+             <string>Telefon*</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="input_phone_2">
+           <widget class="QLineEdit" name="input_phone">
             <property name="minimumSize">
              <size>
               <width>200</width>
@@ -308,7 +344,7 @@ height:25px
             </property>
             <property name="maximumSize">
              <size>
-              <width>300</width>
+              <width>16777215</width>
               <height>16777215</height>
              </size>
             </property>
@@ -321,7 +357,7 @@ height:25px
              </font>
             </property>
             <property name="toolTip">
-             <string>Telefon nömrəsi</string>
+             <string>Telefon nömrəsi - Bu sahə vacibdir</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border:1px solid #006EFF;
@@ -329,9 +365,6 @@ background-color: rgb(255, 255, 255);
 border-radius:6px;
 height:25px
 </string>
-            </property>
-            <property name="text">
-             <string/>
             </property>
             <property name="maxLength">
              <number>12</number>
@@ -383,6 +416,9 @@ height:25px
             <bold>false</bold>
            </font>
           </property>
+          <property name="toolTip">
+           <string/>
+          </property>
           <property name="styleSheet">
            <string notr="true">background-color:transparent;</string>
           </property>
@@ -414,7 +450,7 @@ height:25px
            </font>
           </property>
           <property name="toolTip">
-           <string>Ünvan</string>
+           <string>Ünvan - Bu sahə vacibdir</string>
           </property>
           <property name="styleSheet">
            <string notr="true">border:1px solid #006EFF;
@@ -437,7 +473,7 @@ height:25px
        </layout>
       </item>
       <item>
-       <spacer name="verticalSpacer_5">
+       <spacer name="verticalSpacer_6">
         <property name="font">
          <font>
           <family>Sans Serif</family>
@@ -454,38 +490,78 @@ height:25px
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>20</height>
+          <height>10</height>
          </size>
         </property>
        </spacer>
       </item>
       <item>
-       <widget class="QCheckBox" name="checkBox_level_customer">
-        <property name="font">
-         <font>
-          <family>Sans Serif</family>
-          <pointsize>11</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Loyal</string>
-        </property>
-        <property name="icon">
-         <iconset resource="resources.qrc">
-          <normaloff>:/icons/crown.png</normaloff>:/icons/crown.png</iconset>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>18</width>
-          <height>18</height>
-         </size>
-        </property>
-        <property name="tristate">
-         <bool>false</bool>
-        </property>
-       </widget>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_note">
+          <property name="font">
+           <font>
+            <family>Sans Serif</family>
+            <pointsize>12</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:transparent;</string>
+          </property>
+          <property name="text">
+           <string>Qeyd</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="input_note">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sans Serif</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="toolTip">
+           <string>Əlavə qeyd</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:1px solid #006EFF;
+background-color: rgb(255, 255, 255);
+border-radius:6px;
+height:25px
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>55</number>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
        <spacer name="verticalSpacer_4">
@@ -565,65 +641,6 @@ QPushButton:pressed {
           </property>
           <property name="shortcut">
            <string>Return</string>
-          </property>
-          <property name="checkable">
-           <bool>false</bool>
-          </property>
-          <property name="autoExclusive">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="button_add_and_create">
-          <property name="maximumSize">
-           <size>
-            <width>125</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="font">
-           <font>
-            <family>Sans Serif</family>
-            <pointsize>11</pointsize>
-            <weight>50</weight>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="cursor">
-           <cursorShape>PointingHandCursor</cursorShape>
-          </property>
-          <property name="toolTip">
-           <string>Yarat və Əlavə et - Ctrl+Enter</string>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">QPushButton{
-	color:#006EFF;
-	height:30px;
-	padding:0 5px 0 5px;
-	border:1px solid #006EFF;
-	border-radius:8px;
-}
-
-QPushButton:hover {
-    background-color:rgb(216, 216, 216); 
-}
-
-QPushButton:pressed {
-    background-color: white; 
-}</string>
-          </property>
-          <property name="text">
-           <string>Əlavə et</string>
-          </property>
-          <property name="iconSize">
-           <size>
-            <width>20</width>
-            <height>20</height>
-           </size>
-          </property>
-          <property name="shortcut">
-           <string>Ctrl+Return</string>
           </property>
           <property name="checkable">
            <bool>false</bool>
@@ -731,7 +748,7 @@ QPushButton:pressed {
            <enum>Qt::NoFocus</enum>
           </property>
           <property name="toolTip">
-           <string>Müştərini sil - Ctrl+Del</string>
+           <string>Sil - Ctrl+Del</string>
           </property>
           <property name="styleSheet">
            <string notr="true">QPushButton{

@@ -60,7 +60,8 @@
          <enum>Qt::NoFocus</enum>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color:transparent;</string>
+         <string notr="true">background-color:transparent;
+color:#006EFF;</string>
         </property>
         <property name="text">
          <string/>
@@ -115,51 +116,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_stock_quantity">
-        <property name="font">
-         <font>
-          <family>Sans Serif</family>
-          <pointsize>12</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
-        </property>
-        <property name="toolTip">
-         <string>Məhsulun anbar qalığı</string>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color:transparent;</string>
-        </property>
-        <property name="text">
-         <string>Anbar Qalığı:</string>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="Line" name="line_2">
-        <property name="font">
-         <font>
-          <family>Sans Serif</family>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="verticalSpacer_2">
+       <spacer name="verticalSpacer_3">
         <property name="font">
          <font>
           <family>Sans Serif</family>
@@ -179,7 +136,7 @@
         <property name="sizeHint" stdset="0">
          <size>
           <width>20</width>
-          <height>10</height>
+          <height>25</height>
          </size>
         </property>
        </spacer>
@@ -390,7 +347,7 @@ height:25px
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="focusPolicy">
-           <enum>Qt::StrongFocus</enum>
+           <enum>Qt::NoFocus</enum>
           </property>
           <property name="toolTip">
            <string>Enter</string>
@@ -474,7 +431,7 @@ QPushButton:pressed {
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="focusPolicy">
-           <enum>Qt::StrongFocus</enum>
+           <enum>Qt::NoFocus</enum>
           </property>
           <property name="toolTip">
            <string>Esc</string>

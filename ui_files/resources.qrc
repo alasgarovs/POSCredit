@@ -1,16 +1,18 @@
 <RCC>
   <qresource>
+    <file>../icons/add_document.png</file>
+    <file>../icons/cash-machine_blue.png</file>
+    <file>../icons/cash-machine.png</file>
+    <file>../icons/supplier_w.png</file>
+    <file>../icons/supplier_blue.png</file>
     <file>../icons/info.png</file>
     <file>../icons/info-blue.png</file>
     <file>../icons/settings_blue.png</file>
     <file>../icons/settings.png</file>
     <file>../icons/user_blue.png</file>
     <file>../icons/user.png</file>
-    <file>../icons/crown.png</file>
     <file>../icons/navicon.png</file>
     <file>../icons/refresh.png</file>
-    <file>../icons/caret-up.png</file>
-    <file>../icons/caret-down.png</file>
     <file>../icons/printing.png</file>
     <file>../icons/open.png</file>
     <file>../icons/credit-card_white.png</file>
@@ -25,7 +27,6 @@
     <file>../icons/delete.png</file>
     <file>../icons/document_blue.png</file>
     <file>../icons/document.png</file>
-    <file>../icons/edit.png</file>
     <file>../icons/excel.png</file>
     <file>../icons/favicon.png</file>
     <file>../icons/log_out_blue.png</file>

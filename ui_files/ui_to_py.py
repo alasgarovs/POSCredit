@@ -4,8 +4,8 @@ import subprocess
 
 
 def generate_python_files():
-    py_files = ['main.py', 'customer.py', 'product.py', 'payment.py', 'price.py', 'document.py']
-    ui_files = ['main.ui', 'customer.ui', 'product.ui', 'payment.ui', 'price.ui', 'document.ui']
+    py_files = ['main.py', 'stakeholder.py', 'product.py', 'payment.py', 'price.py', 'document.py', 'list.py']
+    ui_files = ['main.ui', 'stakeholder.ui', 'product.ui', 'payment.ui', 'price.ui', 'document.ui', 'list.ui']
 
     for py_file, ui_file in zip(py_files, ui_files):
         py_path = os.path.join('..', 'src/ui_pycode', py_file)

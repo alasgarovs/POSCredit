@@ -36,6 +36,9 @@
        <bold>false</bold>
       </font>
      </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
      <property name="styleSheet">
       <string notr="true">QDateEdit {
 	border:1px solid #006EFF;
@@ -59,51 +62,89 @@ QDateEdit::calendar-popup QCalendarWidget QAbstractItemView {
 }
 </string>
      </property>
-     <layout class="QVBoxLayout" name="verticalLayout_6">
+     <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
-       <widget class="QLabel" name="label_username">
-        <property name="font">
-         <font>
-          <family>Sans Serif</family>
-          <pointsize>14</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <property name="spacing">
+         <number>5</number>
         </property>
-        <property name="styleSheet">
-         <string notr="true">background-color:transparent;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="wordWrap">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="label_customer_id">
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>10</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>Sans Serif</family>
-          <pointsize>3</pointsize>
-          <weight>50</weight>
-          <bold>false</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color:transparent;</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
+        <item>
+         <widget class="QLabel" name="label_username">
+          <property name="font">
+           <font>
+            <family>Sans Serif</family>
+            <pointsize>14</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:transparent;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_type">
+          <property name="font">
+           <font>
+            <family>Sans Serif</family>
+            <pointsize>9</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:transparent;
+color:rgb(99, 99, 99);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_id">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>10</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Sans Serif</family>
+            <pointsize>3</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:transparent;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="Line" name="line">
@@ -113,6 +154,9 @@ QDateEdit::calendar-popup QCalendarWidget QAbstractItemView {
           <weight>50</weight>
           <bold>false</bold>
          </font>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -131,11 +175,14 @@ QDateEdit::calendar-popup QCalendarWidget QAbstractItemView {
             <bold>false</bold>
            </font>
           </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
           <property name="styleSheet">
            <string notr="true">background-color:transparent;</string>
           </property>
           <property name="text">
-           <string>Ümumi Qiymət</string>
+           <string>Ümumi</string>
           </property>
          </widget>
         </item>
@@ -160,6 +207,9 @@ QDateEdit::calendar-popup QCalendarWidget QAbstractItemView {
             <weight>50</weight>
             <bold>false</bold>
            </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
           </property>
           <property name="toolTip">
            <string>Ümumi qiymət</string>
@@ -194,6 +244,9 @@ color:rgb(79, 79, 79);
           <bold>false</bold>
          </font>
         </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -219,6 +272,9 @@ color:rgb(79, 79, 79);
             <weight>50</weight>
             <bold>false</bold>
            </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
           </property>
           <property name="styleSheet">
            <string notr="true">background-color:transparent;</string>
@@ -249,6 +305,9 @@ color:rgb(79, 79, 79);
             <weight>50</weight>
             <bold>false</bold>
            </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::StrongFocus</enum>
           </property>
           <property name="toolTip">
            <string>Ödəniş miqdarı</string>
@@ -288,6 +347,9 @@ height:25px
           <bold>false</bold>
          </font>
         </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -313,6 +375,9 @@ height:25px
             <weight>50</weight>
             <bold>false</bold>
            </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
           </property>
           <property name="styleSheet">
            <string notr="true">background-color:transparent;</string>
@@ -343,6 +408,9 @@ height:25px
             <weight>50</weight>
             <bold>false</bold>
            </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
           </property>
           <property name="toolTip">
            <string>Qalıq borc</string>
@@ -377,6 +445,9 @@ color:rgb(79, 79, 79);
           <bold>false</bold>
          </font>
         </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -403,6 +474,9 @@ color:rgb(79, 79, 79);
             <bold>false</bold>
            </font>
           </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
           <property name="styleSheet">
            <string notr="true">background-color:transparent;</string>
           </property>
@@ -417,6 +491,9 @@ color:rgb(79, 79, 79);
            <widget class="QDateEdit" name="payment_calendar">
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="toolTip">
              <string>Borcun ödəniş tarixi</string>
@@ -456,6 +533,9 @@ color:rgb(79, 79, 79);
           <bold>false</bold>
          </font>
         </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
         </property>
@@ -490,6 +570,9 @@ color:rgb(79, 79, 79);
           </property>
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::StrongFocus</enum>
           </property>
           <property name="toolTip">
            <string>Enter</string>
@@ -536,6 +619,9 @@ QPushButton:pressed {
         </item>
         <item>
          <spacer name="horizontalSpacer">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -568,6 +654,9 @@ QPushButton:pressed {
           </property>
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::StrongFocus</enum>
           </property>
           <property name="toolTip">
            <string>Esc</string>
