@@ -316,7 +316,7 @@ class Main(QMainWindow, Ui_Main):
     ############ LIST WINDOW ####################################################################################################
     #############################################################################################################################
     def open_list_window(self, list_type):
-        self.List_GUI.label_list_type.clear()
+        self.List_GUI.input_search.clear()
         if list_type == 'document_type':
             list_type = 'supplier' if self.Document_GUI.combobox_document_type.currentText() == 'Alış'  else 'customer'
 
