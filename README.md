@@ -23,7 +23,8 @@ POSCredit is a user-friendly Point of Sale (POS) desktop application designed fo
   Generate sales receipts and other documents for accurate record-keeping.
 
 ## Demo
- <img src="https://github.com/user-attachments/assets/1428a2b7-d462-4fae-9dd7-4ec3e10271e6" alt="favicon" width="700"/>
+ <img src="https://github.com/user-attachments/assets/f7f145c9-bbf4-4a21-9fac-c63caff579bf" alt="favicon" width="700"/>
+
 
 
 ## Requirements
